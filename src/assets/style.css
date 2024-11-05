@@ -1,0 +1,109 @@
+:root {
+    --orange-primary-color: #F55014;
+    --white-secondary-color: #D5D5D4;
+    --blue-accent-color: #0E739F;
+    --black-primary-color: #333333;
+}
+
+body {
+    background-color: white;
+    font-family: "Ubuntu Sans Mono", sans-serif;
+    margin: 10px;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1rem;
+    color: var(--black-primary-color);
+}
+
+h1 {
+    font-size: 3.3em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2.2em;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+    padding-bottom: 0.2rem;
+}
+
+div#half-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--orange-primary-color);
+    border: var(--orange-primary-color) solid 2px;
+    border-radius: 5px;
+    color: white;
+    aspect-ratio: 3 / 1;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+button:hover, #hover {
+    background-color: white;
+    border: var(--orange-primary-color) solid 2px;
+    color: var(--orange-primary-color);
+}
+
+button:active, #active {
+    background-color: var(--blue-accent-color);
+    border: var(--blue-accent-color) solid 2px;
+    color: white;
+}
+
+button:disabled {
+    background-color: var(--white-secondary-color);
+    border: black solid 2px;
+    color: var(--black-primary-color);
+    cursor: not-allowed;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    border: var(--black-primary-color) solid 2px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 5px;
+    margin: 5px;
+    max-height: 10rem;
+    max-width: 10rem;
+    display: block;
+}
